@@ -1,0 +1,28 @@
+.banner__contato {
+    background: url('../imagem/banners/background-rodape.png')no-repeat center / cover;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 75px;
+}
+.banner__contato__titulo {
+    color: #FDFDFD;
+}
+@media screen and (min-width: 0) {
+    .banner__contato {
+        height: 7rem;
+        margin-top: 35px;
+    }
+    .banner__contato__titulo {
+        font-size: 2rem;
+    }
+}
+@media screen and (min-width: 1024px) {
+    .banner__contato {
+        height: 12rem;
+    }
+    .banner__contato__titulo {
+        font-size: 3rem;
+    }
+}

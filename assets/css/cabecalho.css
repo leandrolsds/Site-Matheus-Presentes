@@ -1,0 +1,160 @@
+#cabecalho {
+    align-items: center;
+    box-sizing: border-box;
+    background: #F7F700;
+    box-shadow: 0px 1px 3px#2323235e;
+    display: flex;
+    height: 50px;
+    justify-content: space-between;
+    padding: 0.50rem 2rem;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1001;
+}
+#cabecalho div {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 200px;
+}
+#cabecalho a img {
+    width: 60px;
+}
+#cabecalho p{
+    font-size: 20px;
+    color: #000265;
+}
+#contatos {
+    display: flex;
+    flex-direction: column;
+}
+#btn__hamburguer {
+    border-top: 2px solid;
+    cursor: pointer;
+    display: block;
+    width: 20px;
+    background: transparent;
+    color: #000265;
+}
+#btn__hamburguer::before, #btn__hamburguer::after {
+    content: '';
+    display: block;
+    width: 20px;
+    height: 2px;
+    background: currentColor;
+    margin-top: 5px;
+    transition: .3s;
+    position: relative;
+}
+#nav.active #btn__hamburguer {
+    color: #F70000;
+    border-top-color: transparent;
+    
+}
+#nav.active #btn__hamburguer::before {
+    background: currentColor;
+    transform: rotate(45deg);
+}
+#nav.active #btn__hamburguer::after {
+    transform: rotate(-45deg);
+    top: -7px;
+}
+#menu {
+    display: block;
+    list-style: none;
+    position: absolute;
+    width: 100%;
+    top: 38.2px;
+    right: 0px;
+    background: #F7F700;
+    height: 0px;
+    transition: .6s;
+    z-index: 1001;
+    visibility: hidden;
+    overflow-y: hidden;
+    padding-top: 1rem;
+}
+#menu a {
+    text-decoration: none;
+    color: #232323;
+    display: block;
+    font-size: 20px;
+    margin: 0 1rem;
+    padding: 1rem 0;
+    border-bottom: 3px solid #E2E2E2;
+}
+#menu a:is(:link, :active, :visited).active {
+    color:#FF0000;
+}
+#nav.active #menu {
+    height: calc(55vh - 55px);
+    visibility: visible;
+    overflow-y: auto;
+}
+
+
+@media screen and (min-width: 768px) {
+    #cabecalho {
+        height: 55px;
+    }
+    #cabecalho div {
+        width: 300px;
+        height: 40px;
+    }
+    #cabecalho a img {
+        width: 80px;
+    }
+    #cabecalho p{
+        font-size: 24px;
+    }
+    #btn__hamburguer {
+        display: none;
+    }
+    #menu {
+        align-items: center;
+        background: none;
+        display: flex;
+        flex-direction: row;
+        position:relative;
+        right: 0;
+        top: 0;
+        border-bottom-left-radius: 0;
+        box-shadow: none;
+        visibility: visible;
+        overflow-y: visible;
+        padding-top: 0;
+    }
+    #menu a:is(:link, :active, :visited).active {
+        border-radius: 30px;
+        color: #F4F4F4;
+        background: #000265;
+    }
+    #menu a {
+        display: flex;
+        border-bottom: none;
+        font-size: 18px;
+        margin: 0 .3rem;
+        padding: .3rem .60rem;
+    }
+    #menu a:hover {
+        border-radius: 30px;
+        color: #F4F4F4;
+        background: #000265;
+        
+    }
+    #nav.active #menu {
+        display: flex;
+        height: 45px;
+        visibility: visible;
+        overflow-y: hidden;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    #menu a {
+        font-size: 20px;
+        margin: 0 .3rem;
+        padding: .3rem 1rem;
+    }
+}

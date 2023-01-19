@@ -1,0 +1,5 @@
+Vermelho = #FF0000
+Azul     = #000265
+Amarelo  = #F7F700
+Cinza    = #F4F4F4
+Preto    = #232323

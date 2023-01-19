@@ -1,0 +1,92 @@
+.banner__sobre {
+    background: url('../imagem/banners/background-rodape.png')no-repeat center / cover;
+    width: 100%;
+    position: relative;
+    top: 50px;
+    margin-bottom: 100px;
+    height: 100px;
+}
+.banner__sobre__titulo {
+    position: relative;
+    color: #FDFDFD;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 2rem;
+    width: 100%;
+    text-align: center;
+}
+.sobre {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    border-radius: 10px;
+    background: #FDFDFD;
+    flex-direction: column;
+    padding: 2rem 1rem;
+    margin: 2rem .5rem;
+}
+.sobre__conteudo {
+    justify-content: space-around;
+    width: auto;
+    padding-bottom: 2rem;
+}
+.sobre__titulo {
+    font-family: 'Montserrat', sans-serif;
+    margin-bottom: 1rem;
+    font-size: 20px;
+    text-align: center;
+}
+.sobre__descricao {
+    font-family: 'Montserrat', sans-serif;
+    line-height: 1.5;
+    font-size: 16px;
+    text-align: justify;
+}
+.sobre__imagem {
+    border-radius: 10px;
+    width: 100%;
+}
+
+@media screen and (min-width: 768px) {
+    .banner__sobre {
+        top: 55px;
+        margin-bottom: 100px;
+        height: 150px;
+    }
+    .sobre {
+        padding: 3rem 2rem;
+        margin: 4rem 2rem;
+    }
+    .sobre__titulo {
+        font-size: 22px;
+    }
+    .sobre__descricao {
+        font-size: 17px;
+    }
+}
+@media screen and (min-width: 1024px) {
+    .banner__sobre {
+        height: 200px;
+    }
+    .banner__sobre__titulo {
+        font-size: 3rem;
+    }
+    .sobre {
+        flex-direction: row;
+    }
+    .sobre__conteudo {
+        width: 45%;
+    }
+    .sobre__titulo {
+        font-size: 32px;
+        text-align: start;
+    }
+    .sobre__imagem {
+        width: 50%;
+    }
+    .sobre__descricao {
+        font-size: 22px;
+        text-align: start;
+    }
+}

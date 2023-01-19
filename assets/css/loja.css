@@ -1,0 +1,128 @@
+.banner__loja {
+    background: url('../imagem/banners/background-rodape.png')no-repeat center / cover;
+    width: 100%;
+    position: relative;
+    top: 50px;
+    margin-bottom: 70px;
+    height: 100px;
+}
+.banner__loja__titulo {
+    position: relative;
+    color: #FDFDFD;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 2rem;
+    width: 100%;
+    text-align: center;
+}
+.container__loja {
+    display: flex;
+    flex-direction: column-reverse;
+    padding: 2rem 1rem;
+}
+.white {
+    background: #FDFDFD;
+}
+.conteudo__loja {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 0;
+}
+.titulo__loja {
+    color: #000265;
+    padding-bottom: 1rem;
+    font-size: 1.5rem;
+}
+.endereco {
+    line-height: 1.5;
+    padding-bottom: 1rem;
+    font-size: 1rem;
+}
+.funcionamento { 
+    font-weight: bold;
+    padding-bottom: .8rem;
+    color: #232323;
+    font-size: 1.2rem;
+}
+.DiasDeFuncionamento {
+    font-size: 1rem;
+    line-height: 1.5;
+    font-weight: 500;
+}
+.localizacao__loja {
+    font-size: 16px;
+    text-decoration: none;
+    color:#FDFDFD;
+    background: #FF0000;
+    padding: .7rem;
+    border-radius: 10px;
+    font-weight: bold;
+    margin-top: 1rem;
+    text-align: center;
+    transition: .5s;
+}
+.localizacao__loja:hover {
+    background: #990202;
+}
+.imagem__loja {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 2rem;
+    width: 100%;
+}
+.imagem__loja img{
+    border-radius: 10px;
+    width: 100vw;
+}
+
+@media screen and (min-width: 768px) {
+    .banner__loja {
+        top: 55px;
+        margin-bottom: 100px;
+        height: 150px;
+    }
+    .banner__loja__titulo {
+        font-size: 3rem;
+    }
+    .titulo__loja {
+        font-size: 2.1rem;
+    }
+    .endereco {
+        font-size: 1.5rem;
+    }
+    .funcionamento {
+        font-size: 1.3rem;
+    }
+    .localizacao__loja {
+        font-size: 18px;
+    }
+    .imagem__loja img{
+        width: 100%;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .banner__loja {
+        height: 200px;
+    }
+    .container__loja {
+        flex-direction: row;
+        padding: 2rem;
+    }
+    .conteudo__loja {
+        width: 50%;
+        padding: 2rem;
+    }
+    .titulo__loja {
+        font-size: 2.5rem;
+    }
+    
+    .imagem__loja {
+        padding: 2rem;
+        width: 50%;
+    }
+}
