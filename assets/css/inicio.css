@@ -2,9 +2,6 @@
 
 .banner{
     width: 100%;
-    position: relative;
-    top: 50px;
-    margin-bottom: 45px;
 }
 .banner__imagem {
     display: none;
@@ -18,7 +15,6 @@
 .categoria {
     background:  #fdfdfd;
     display: flex;
-    padding: 1rem;
     overflow: auto;
     flex-direction: column;
     padding: 0.30rem;
@@ -32,7 +28,6 @@
 .lista__categoria {
     max-width: 1400px;
     display: flex;
-    /*justify-content: center;*/
 }
 .item__categoria {
     align-items: center;
@@ -158,10 +153,7 @@ hr {
     margin: .50rem;
 }
 @media screen and (min-width: 768px) {
-    .banner{
-        top: 55px;
-        margin-bottom: 50px;
-    }
+   
     .banner__imagem {
         display: none;
     }
@@ -215,6 +207,7 @@ hr {
         align-items: center;
     }
     .container {
+        width: 90%;
         max-width: 1400px;
     }
     .banner_mobile {
@@ -239,6 +232,7 @@ hr {
     }
     .lista__itens {
         padding: 1rem;
+        margin-bottom: 0;
     }
     .item {
         padding: 3rem 2rem;

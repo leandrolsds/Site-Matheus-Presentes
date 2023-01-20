@@ -4,7 +4,7 @@
     background: #F7F700;
     box-shadow: 0px 1px 3px#2323235e;
     display: flex;
-    height: 50px;
+    height: 55px;
     justify-content: space-between;
     padding: 0.50rem 2rem;
     position: fixed;
@@ -95,9 +95,6 @@
 
 
 @media screen and (min-width: 768px) {
-    #cabecalho {
-        height: 55px;
-    }
     #cabecalho div {
         height: 40px;
     }

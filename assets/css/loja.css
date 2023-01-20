@@ -1,10 +1,15 @@
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 .banner__loja {
     background: url('../imagem/banners/background-rodape.png')no-repeat center / cover;
     width: 100%;
-    position: relative;
-    top: 50px;
-    margin-bottom: 70px;
     height: 100px;
+    margin-bottom: 3rem;
 }
 .banner__loja__titulo {
     position: relative;
@@ -19,10 +24,17 @@
 .container__loja {
     display: flex;
     flex-direction: column-reverse;
-    padding: 2rem 1rem;
+    padding: 1rem;
+    width: 90%;
+    max-width: 400px;
+    border-radius: 10px;
+    margin-bottom: 2rem;
 }
 .white {
-    background: #FDFDFD;
+    background: #FDFDFD; 
+}
+.aliceblue {
+    background: aliceblue;
 }
 .conteudo__loja {
     display: flex;
@@ -67,26 +79,22 @@
     background: #990202;
 }
 .imagem__loja {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
     padding-bottom: 2rem;
-    width: 100%;
 }
 .imagem__loja img{
+    width: 100%;
     border-radius: 10px;
-    width: 100vw;
 }
 
 @media screen and (min-width: 768px) {
     .banner__loja {
-        top: 55px;
-        margin-bottom: 100px;
         height: 150px;
     }
     .banner__loja__titulo {
         font-size: 3rem;
+    }
+    .container__loja {
+        max-width: 500px;
     }
     .titulo__loja {
         font-size: 2.1rem;
@@ -99,19 +107,18 @@
     }
     .localizacao__loja {
         font-size: 18px;
-    }
-    .imagem__loja img{
-        width: 100%;
-    }
+    } 
 }
 
 @media screen and (min-width: 1024px) {
     .banner__loja {
         height: 200px;
     }
-    .container__loja {
+    .container__loja { 
+        max-width: 1400px;
         flex-direction: row;
-        padding: 2rem;
+        padding: 0;
+        margin-bottom: 4rem;
     }
     .conteudo__loja {
         width: 50%;
@@ -120,7 +127,6 @@
     .titulo__loja {
         font-size: 2.5rem;
     }
-    
     .imagem__loja {
         padding: 2rem;
         width: 50%;

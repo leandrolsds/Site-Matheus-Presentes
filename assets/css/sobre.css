@@ -1,9 +1,12 @@
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 .banner__sobre {
     background: url('../imagem/banners/background-rodape.png')no-repeat center / cover;
     width: 100%;
-    position: relative;
-    top: 50px;
-    margin-bottom: 100px;
     height: 100px;
 }
 .banner__sobre__titulo {
@@ -18,13 +21,14 @@
 }
 .sobre {
     display: flex;
-    align-items: center;
     justify-content: space-around;
     border-radius: 10px;
     background: #FDFDFD;
     flex-direction: column;
+    margin: 3rem 0;
     padding: 2rem 1rem;
-    margin: 2rem .5rem;
+    width: 90%;
+    max-width: 400px;
 }
 .sobre__conteudo {
     justify-content: space-around;
@@ -50,13 +54,10 @@
 
 @media screen and (min-width: 768px) {
     .banner__sobre {
-        top: 55px;
-        margin-bottom: 100px;
         height: 150px;
     }
     .sobre {
-        padding: 3rem 2rem;
-        margin: 4rem 2rem;
+        max-width: 500px;
     }
     .sobre__titulo {
         font-size: 22px;
@@ -74,6 +75,7 @@
     }
     .sobre {
         flex-direction: row;
+        max-width: 1400px;
     }
     .sobre__conteudo {
         width: 45%;
