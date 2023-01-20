@@ -130,7 +130,7 @@ hr {
     border-radius: 10px;
     display: flex;
     overflow: auto;
-    margin-bottom: 1rem;
+    margin-bottom: 2rem;
 }
 .lista__itens::-webkit-scrollbar {
     display: none;
